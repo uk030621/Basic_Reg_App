@@ -67,7 +67,7 @@ export default function HomePage() {
 
               <Link 
               className="flex justify-center pt-2 text-sm text-slate-500"
-              href="https://vercel.live/link/thursday-club-blog.vercel.app?via=project-dashboard-alias-list&p=1">Back to Blog</Link>
+              href="https://thursday-club-blog.vercel.app/">Back to Blog</Link>
           
         <div className="p-5 flex justify-center gap-4">
           <div className="inline-block">
