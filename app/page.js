@@ -57,14 +57,18 @@ export default function HomePage() {
         <div className="bg-inherit p-5 h-screen">
             <h1 className="flex justify-center pt-2 text-xl font-bold">Thursday Club</h1>
             <h1 className="flex justify-center pt-2 text-xl font-bold">Event Registration</h1>
-            <h1 className="flex justify-center pt-2 text-sm"> 
+            
+            <h1 className="flex justify-center pt-2 text-sm">
               <span className="font-bold mr-1">Venue:</span> 
               TBA 
+            </h1>
+            
+            <h1 className="flex justify-center pt-2 text-sm">
               <span className="font-bold ml-3 mr-1">Date:</span> 
               TBA 
               <span className="font-bold ml-3 mr-1">Time:</span> 
               TBA
-              </h1>
+            </h1>  
 
               <Link 
               className="flex justify-center pt-2 text-sm"
