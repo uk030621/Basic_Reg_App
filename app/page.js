@@ -3,6 +3,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { Container } from "postcss";
 
 export default function HomePage() {
     const [name, setName] = useState("");
@@ -53,7 +54,7 @@ export default function HomePage() {
     }, []);
 
     return (
-      <div >
+        <div className="bg-zinc-300 p-5 h-screen">
             <h1 className="flex justify-center pt-2 text-xl font-bold">Thursday Club</h1>
             <h1 className="flex justify-center pt-2 text-xl font-bold">Event Registration</h1>
             <h1 className="flex justify-center pt-2 text-sm text-slate-700"> 
@@ -69,30 +70,39 @@ export default function HomePage() {
               className="flex justify-center pt-2 text-sm text-slate-500"
               href="https://thursday-club-blog.vercel.app/">Back to Blog</Link>
           
-        <div className="p-5 flex justify-center gap-4">
-          <div className="inline-block">
-              <h1 className="font-bold p-1 text-sm">Attendee Registration</h1>
-              <form onSubmit={handleSubmit}>
-                  <input
-                      className="p-2 rounded-md border border-green-400 text-sm"
-                      type="text"
-                      placeholder="Enter your full name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      required // Ensure this field is required
-                  />
-                  <button className="ml-4 bg-green-400 p-2 font-thin rounded-md text-sm" type="submit">Submit</button> 
-              </form>
+        
+        
+            <div className="flex justify-center">
+              <h1 className="font-bold p-1 text-sm pt-5">Attendee Registration</h1>
             </div>
-          <div className="inline-block">
-            <h2 className="font-bold p-1 text-sm">Attendee List</h2>
-            <ul className="text-sm px-1">
-                {users.map((user, index) => (
-                    <li key={index}>{user.name}</li>
-                ))}
-            </ul>
-          </div>
+            <div className="flex justify-center">
+                <form onSubmit={handleSubmit} className="flex flex-col">
+                    <input
+                        className="p-2 rounded-md border border-green-400 text-1rem mb-4"
+                        type="text"
+                        placeholder="Enter your full name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                        required // Ensure this field is required
+                    />
+                    <button className="bg-green-400 p-2 rounded-md text-sm" type="submit">
+                        Submit
+                    </button>   
+                </form>
+            </div>
+
+          
+            <div className="flex justify-center" >
+                <h2 className="font-bold p-1 text-sm pt-5">Attendee List</h2>
+            </div>
+            <div className="flex justify-center">
+                <ul className="text-sm px-1">
+                    {users.map((user, index) => (
+                        <li key={index}>{user.name}</li>
+                    ))}
+                </ul> 
+            </div>
         </div>
-        </div>
+        
     );
 }
