@@ -54,7 +54,8 @@ export default function HomePage() {
 
     return (
       <div >
-            <h1 className="flex justify-center pt-2 text-xl font-bold">Thursday Club Xmas Dinner Registration</h1>
+            <h1 className="flex justify-center pt-2 text-xl font-bold">Thursday Club</h1>
+            <h1 className="flex justify-center pt-2 text-xl font-bold">Event Registration</h1>
             <h1 className="flex justify-center pt-2 text-sm text-slate-700"> 
               <span className="font-bold mr-1">Venue:</span> 
               TBA 
