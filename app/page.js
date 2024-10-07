@@ -85,7 +85,7 @@ export default function HomePage() {
                         onChange={(e) => setName(e.target.value)}
                         required // Ensure this field is required
                     />
-                    <button className="bg-green-400 p-2 rounded-md text-sm" type="submit">
+                    <button className="bg-green-400 p-2 text-slate-900 tracking-normal font-bold rounded-md text-sm" type="submit">
                         Submit
                     </button>   
                 </form>
