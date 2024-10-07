@@ -57,7 +57,7 @@ export default function HomePage() {
         <div className="bg-inherit p-5 h-screen">
             <h1 className="flex justify-center pt-2 text-xl font-bold">Thursday Club</h1>
             <h1 className="flex justify-center pt-2 text-xl font-bold">Event Registration</h1>
-            <h1 className="flex justify-center pt-2 text-sm text-slate-700"> 
+            <h1 className="flex justify-center pt-2 text-sm"> 
               <span className="font-bold mr-1">Venue:</span> 
               TBA 
               <span className="font-bold ml-3 mr-1">Date:</span> 
@@ -78,7 +78,7 @@ export default function HomePage() {
             <div className="flex justify-center">
                 <form onSubmit={handleSubmit} className="flex flex-col">
                     <input
-                        className="p-2 rounded-md border border-green-400 text-1rem mb-4 bg-stone-100"
+                        className="p-2 rounded-md border border-green-400 text-1rem mb-4 text-slate-900"
                         type="text"
                         placeholder="Enter your full name"
                         value={name}
