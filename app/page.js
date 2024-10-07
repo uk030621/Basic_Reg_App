@@ -54,7 +54,7 @@ export default function HomePage() {
     }, []);
 
     return (
-        <div className="bg-zinc-300 p-5 h-screen">
+        <div className="bg-inherit p-5 h-screen">
             <h1 className="flex justify-center pt-2 text-xl font-bold">Thursday Club</h1>
             <h1 className="flex justify-center pt-2 text-xl font-bold">Event Registration</h1>
             <h1 className="flex justify-center pt-2 text-sm text-slate-700"> 
@@ -67,7 +67,7 @@ export default function HomePage() {
               </h1>
 
               <Link 
-              className="flex justify-center pt-2 text-sm text-slate-500"
+              className="flex justify-center pt-2 text-sm"
               href="https://thursday-club-blog.vercel.app/">Back to Blog</Link>
           
         
@@ -78,7 +78,7 @@ export default function HomePage() {
             <div className="flex justify-center">
                 <form onSubmit={handleSubmit} className="flex flex-col">
                     <input
-                        className="p-2 rounded-md border border-green-400 text-1rem mb-4"
+                        className="p-2 rounded-md border border-green-400 text-1rem mb-4 bg-stone-100"
                         type="text"
                         placeholder="Enter your full name"
                         value={name}
